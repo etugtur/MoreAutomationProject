@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite" allow-return-values="true" verbose="1" parallel="tests" thread-count="1"
+       configfailurepolicy="continue">
+
+
+    <listeners>
+    <listener class-name="BaseFiles.CustomizedEmailableReport"/>
+    </listeners>
+
+    <test name="Satis">
+        <classes>
+            <class name="Satis"/>
+        </classes>
+    </test>
+
+    <test name="HizmetSorgula">
+        <classes>
+            <class name="HizmetSorgula"/>
+        </classes>
+    </test>
+
+
+
+</suite>
