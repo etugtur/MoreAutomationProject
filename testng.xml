@@ -7,13 +7,13 @@
     <listener class-name="BaseFiles.CustomizedEmailableReport"/>
     </listeners>
 
-    <test name="Satis">
+    <test name="PaketSatis">
         <classes>
             <class name="Satis"/>
         </classes>
     </test>
 
-    <test name="HizmetSorgula">
+    <test name="HizmetSorgulama">
         <classes>
             <class name="HizmetSorgula"/>
         </classes>

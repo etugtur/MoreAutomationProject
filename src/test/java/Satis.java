@@ -7,7 +7,7 @@ public class Satis extends TestBase {
 
 
     @Test
-    public void  Satis(){
+    public void  PaketSatis(){
 
         MainPage mainPage= new MainPage();
         SalePage salePage= new SalePage();
@@ -26,6 +26,4 @@ public class Satis extends TestBase {
                 .siparisiBaslatButonTikla()
                 .siparisMesajKontrol();
     }
-
-
 }

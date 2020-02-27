@@ -43,7 +43,18 @@ public class MainPage extends BasePage {
         return this;
     }
 
+    public MainPage hizmetSorgulamaMenuSec(){
 
+        try {
+            waitElementWithThreadSleep(hizmetSorgulamaMenu_Btn,5);
+            clickElement(hizmetSorgulamaMenu_Btn);
+            reporter.Report_Info("Servis Sorgulama tabi secilmistir.");
+        }catch (Exception e){
+            reporter.Report_Fail("Servis Sorgulama tabinda hata alinmistir! Detay: "+e.getMessage());
+        }
+
+        return this;
+    }
 
 
 }
