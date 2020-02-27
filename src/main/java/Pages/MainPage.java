@@ -11,6 +11,9 @@ import java.util.concurrent.TimeUnit;
 
 public class MainPage extends BasePage {
 
+    private static By satisMenu_Btn= By.xpath("//a/p[text()='Satış']");
+    private static By hizmetSorgulamaMenu_Btn= By.xpath("//a/p[text()='Hizmet Sorgulama']");
+
     ExtendReportMethods reporter=new ExtendReportMethods();
 
     public MainPage openMainPage(){
@@ -26,6 +29,19 @@ public class MainPage extends BasePage {
         return this;
     }
 
+
+    public MainPage satisMenuSec(){
+
+        try {
+            waitElementWithThreadSleep(satisMenu_Btn,5);
+            clickElement(satisMenu_Btn);
+            reporter.Report_Info("Menuden Satis tabi secilmistir.");
+        }catch (Exception e){
+            reporter.Report_Fail("Menu Satis tabinda hata alinmistir! Detay: "+e.getMessage());
+        }
+
+        return this;
+    }
 
 
 
